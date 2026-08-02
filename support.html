@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#073d31" />
+    <meta
+      name="description"
+      content="Official MorrowPass support, troubleshooting, and encrypted-backup guidance."
+    />
+    <link rel="canonical" href="https://akouta.github.io/morrowpass-privacy/support.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MorrowPass Support" />
+    <meta
+      property="og:description"
+      content="Help with scanning, expiry review, reminders, App Lock, and encrypted backup."
+    />
+    <meta property="og:url" content="https://akouta.github.io/morrowpass-privacy/support.html" />
+    <meta property="og:image" content="https://akouta.github.io/morrowpass-privacy/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Support — MorrowPass</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="privacy.html" aria-label="MorrowPass Privacy">
+        <span class="brand-mark" aria-hidden="true">✓</span>
+        MorrowPass
+      </a>
+      <nav class="site-nav" aria-label="Legal and support">
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html" aria-current="page">Support</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Official help</p>
+        <h1>MorrowPass Support</h1>
+        <p class="hero-copy">
+          Practical help for card scans, expiry review, local reminders, App
+          Lock, and password-encrypted backups.
+        </p>
+        <p class="meta">Support email: ahmad@codeflowtechnologies.com</p>
+      </section>
+
+      <article class="content-card">
+        <h2>Contact support</h2>
+        <p>
+          Email
+          <a href="mailto:ahmad@codeflowtechnologies.com?subject=MorrowPass%20Support">ahmad@codeflowtechnologies.com</a>
+          with the MorrowPass version and build, device model, iOS version, the
+          step that failed, what you expected, and what happened.
+        </p>
+        <div class="callout">
+          <strong>Protect your card data.</strong> Do not attach a real card
+          image or include a full identifier, exact birth or expiry date, backup
+          password, or decrypted backup content. Reproduce the problem with
+          synthetic or fully redacted information.
+        </div>
+        <div class="button-row">
+          <a class="button" href="mailto:ahmad@codeflowtechnologies.com?subject=MorrowPass%20Support">Email MorrowPass Support</a>
+          <a class="button secondary" href="privacy.html">Read Privacy Policy</a>
+        </div>
+
+        <h2>Improve a card scan</h2>
+        <ol>
+          <li>Place the card on a contrasting, evenly lit surface.</li>
+          <li>Keep all four corners inside the frame.</li>
+          <li>Avoid glare, shadows, and motion blur.</li>
+          <li>Rotate or refine the crop if the card is sideways or an edge is incorrect.</li>
+          <li>Retake or import a sharper photo if key text remains unreadable.</li>
+          <li>Review every suggested detail and explicitly confirm the printed expiry before saving.</li>
+        </ol>
+
+        <h2>Possible duplicate warning</h2>
+        <p>
+          MorrowPass compares confirmed card details with readable local records
+          before saving. If it finds a likely match, choose Keep Reviewing to
+          check the form. Use Save Anyway only when the new record is genuinely
+          a different card. A linked replacement is not treated as a duplicate
+          of its predecessor.
+        </p>
+
+        <h2>Encrypted backup and recovery</h2>
+        <p>
+          Create or restore a password-encrypted
+          <code>.morrowpassbackup</code> file from Settings. MorrowPass never
+          stores the password and cannot recover it, so keep the password
+          separate from the backup file. Retained images are excluded by
+          default and require explicit export opt-in; payment-card images are
+          never included.
+        </p>
+        <p>
+          Import first decrypts, authenticates, and checks the complete file.
+          After separate confirmation, it replaces the entire current library
+          rather than merging it, then rebuilds local reminders. A wrong
+          password or tampered file must not change the current library.
+        </p>
+        <p>
+          The normal on-device encryption key is tied to the installation and
+          does not transfer through an ordinary migration or restore. If
+          protected data is unavailable, unlock the device and use Retry. The
+          other recovery choices are Restore Encrypted Backup or Delete
+          Unreadable Card.
+        </p>
+
+        <h2>Renewal guidance boundary</h2>
+        <p>
+          MorrowPass records your renewal plan; it does not verify issuer rules,
+          submit renewals, or provide legal, medical, financial, or government
+          advice. Always confirm current requirements directly with the official
+          issuer using a link or telephone number you trust.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 MorrowPass</p>
+      <p>Private card expiry tracking for iPhone and iPad.</p>
+    </footer>
+  </body>
+</html>
