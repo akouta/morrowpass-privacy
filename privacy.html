@@ -41,7 +41,7 @@
           MorrowPass keeps card-expiry tracking local to your Apple device and
           gives you control over retained images, reminders, and backups.
         </p>
-        <p class="meta"><strong>Last updated:</strong> August 2, 2026</p>
+        <p class="meta"><strong>Last updated:</strong> August 3, 2026</p>
       </section>
 
       <article class="content-card">
@@ -59,6 +59,7 @@
         <ul>
           <li>front and optional back card images;</li>
           <li>card category, display name, holder, issuer, country or region, masked identifier, issue date, and expiry date;</li>
+          <li>optional preferred card regions used to improve local interpretation;</li>
           <li>reminder choices and renewal status;</li>
           <li>renewal links, telephone numbers, notes, and checklist steps; and</li>
           <li>bounded source evidence for approved OCR fields.</li>
@@ -73,7 +74,13 @@
           Payment-card records are restricted to a nickname, issuer, final four
           digits, and expiry. MorrowPass does not persist full card numbers,
           PINs, CVVs, magnetic-stripe data, or payment-card images in portable
-          backups.
+          backups. MorrowPass does not request the back of a payment card.
+        </p>
+        <p>
+          Preferred card regions are optional app settings stored on the
+          device. They softly prioritize familiar layouts only after matching
+          printed evidence; they do not exclude cards from another country or
+          automatically populate a saved country or region.
         </p>
 
         <h2>Permissions</h2>
@@ -97,6 +104,7 @@
           is tied to the installation and does not transfer through an ordinary
           migration or restore.
         </p>
+
         <p>
           You can explicitly create a password-encrypted
           <code>.morrowpassbackup</code> file. MorrowPass never stores or
@@ -117,6 +125,31 @@
           library rather than merging it and then rebuilds local reminders.
         </p>
 
+        <h2>Free and Lifetime Pro purchases</h2>
+        <p>
+          MorrowPass Free supports up to four active cards. Archiving an active
+          card frees a Free slot without deleting the archived record. A
+          one-time, non-consumable MorrowPass Lifetime Pro purchase removes the
+          active-card limit. It is not a subscription and has no recurring
+          charge.
+        </p>
+        <p>
+          Purchase and the explicit Restore Purchases action use Apple
+          StoreKit. The United States base price is USD 9.99, while the app
+          displays the price and currency supplied by Apple for the current
+          storefront. Apple processes the transaction under its terms and
+          privacy policy. MorrowPass receives only the Apple-signed information
+          needed to verify whether Lifetime Pro is active on the device. The
+          developer operates no purchase server, and no card or backup content
+          is included in StoreKit requests.
+        </p>
+        <p>
+          Existing saved cards remain available to view, edit, archive, export,
+          and delete if a purchase is pending, unavailable, refunded, or not
+          restored. Restore Purchases runs only after an explicit user action
+          and may ask the user to authenticate with the App Store.
+        </p>
+
         <h2>Sharing and third parties</h2>
         <p>
           MorrowPass does not sell, rent, share, or transmit user data to the
@@ -125,9 +158,10 @@
           Generic guidance templates are bundled with the app.
         </p>
         <p>
-          Apple system services and any file provider you deliberately choose
-          are governed by their own privacy terms. MorrowPass integrates no
-          third-party code that receives card or usage data.
+          Apple system services, including StoreKit, and any file provider you
+          deliberately choose are governed by their own privacy terms.
+          MorrowPass integrates no third-party code that receives card or usage
+          data.
         </p>
 
         <h2>Retention and deletion</h2>
@@ -164,8 +198,8 @@
         <h2>Changes and contact</h2>
         <p>
           This policy will be updated before any release that adds a backend,
-          online issuer lookup, telemetry, advertising, tracking, or a
-          data-receiving SDK.
+          online issuer lookup, telemetry, advertising, tracking, a
+          data-receiving SDK, or developer-operated purchase processing.
         </p>
         <p>
           For privacy or support questions, email
