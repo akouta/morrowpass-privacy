@@ -41,7 +41,7 @@
           MorrowPass keeps card-expiry tracking local to your Apple device and
           gives you control over retained images, reminders, and backups.
         </p>
-        <p class="meta"><strong>Last updated:</strong> August 3, 2026</p>
+        <p class="meta"><strong>Last updated:</strong> August 8, 2026</p>
       </section>
 
       <article class="content-card">
@@ -58,7 +58,7 @@
         <p>MorrowPass can handle information that you choose to scan, import, type, or approve, including:</p>
         <ul>
           <li>front and optional back card images;</li>
-          <li>card category, display name, holder, issuer, country or region, masked identifier, issue date, and expiry date;</li>
+          <li>card category, display name, holder, issuer, country or region, identifier, issue date, and expiry date;</li>
           <li>optional preferred card regions used to improve local interpretation;</li>
           <li>reminder choices and renewal status;</li>
           <li>renewal links, telephone numbers, notes, and checklist steps; and</li>
@@ -75,6 +75,15 @@
           digits, and expiry. MorrowPass does not persist full card numbers,
           PINs, CVVs, magnetic-stripe data, or payment-card images in portable
           backups. MorrowPass does not request the back of a payment card.
+        </p>
+        <p>
+          For non-payment records such as passports, visas, licences, permits,
+          health cards, and student cards, a complete user-reviewed identifier
+          may be stored so the user can retrieve it later. It remains in
+          authenticated encrypted local storage and password-encrypted backups;
+          MorrowPass does not send it to the developer. Older records that were
+          already suffix-masked remain masked unless the user edits or rescans
+          them.
         </p>
         <p>
           Preferred card regions are optional app settings stored on the
@@ -179,9 +188,10 @@
         </p>
         <p>
           If protected data cannot be decrypted, MorrowPass hides it and
-          excludes the record from normal detail, search, reminders, duplicate
-          matching, and replacement. Recovery choices are Retry, Restore
-          Encrypted Backup, or Delete Unreadable Card.
+          excludes the record from normal detail, search, duplicate matching,
+          and replacement. Existing eligible reminders remain local and use
+          generic wording without the protected card name. Recovery choices
+          are Retry, Restore Encrypted Backup, or Delete Unreadable Card.
         </p>
 
         <h2>These public pages</h2>
